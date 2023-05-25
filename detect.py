@@ -7,7 +7,7 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
-from model import Net
+from model import DetectNet
 from dataset import FaceDataset
 from arguments import Args
 
@@ -110,7 +110,7 @@ class TrainInterface(object):
         with open(os.path.join(args.checkpoints_dir, "log.txt"), "a+") as log_file:
             log_file.truncate(0)
         if args.pretrain is None:
-            model = Net()
+            model = DetectNet()
         else:
             model = torch.load(args.pretrain)
         if args.use_GPU:
