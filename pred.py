@@ -7,7 +7,7 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
-from model import Net
+from model import PredNet
 from dataset import MyDataset
 from arguments import Args
 
@@ -126,7 +126,7 @@ class TrainInterface(object):
             log_file.truncate(0)
         if args.pretrain is None:
             size = [8, 7, 7, 4, 3, 3]
-            model = Net(output_size=size[self.organ])
+            model = PredNet(output_size=size[self.organ])
         else:
             model = torch.load(args.pretrain)
         if args.use_GPU:
