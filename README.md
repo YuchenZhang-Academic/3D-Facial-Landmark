@@ -2,7 +2,7 @@
 
 ## Background
 
-The source code of paper in Orthodontics *An Automated Method of 3D Facial Soft Tissue Landmark Prediction based on Object Detection and Deep Learning*.
+The source code of paper in Orthodontics [An Automated Method of 3D Facial Soft Tissue Landmark Prediction based on Object Detection and Deep Learning](https://www.mdpi.com/2075-4418/13/11/1853).
 ![URL_TS](./pipeline.png)
 ## Requirements
 - Python 3.7 +
